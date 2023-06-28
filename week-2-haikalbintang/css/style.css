@@ -53,6 +53,7 @@ header {
 
 #branding-text {
     font-size: 17/16rem;
+    font-family: url(njnaruto.ttf);
 }
 /* #branding-text:hover {
     transition: transform 2s;
@@ -120,6 +121,9 @@ main {
     border-top: 5px solid rgb(207, 100, 29);
     border-bottom: 5px solid rgb(207, 100, 29);
  }
+ .heroku p {
+    font-size: 20px;
+ }
  .heroku-slide {
     display: flex;
     flex-direction: column;
@@ -170,9 +174,15 @@ main {
     animation-duration: 4s;
     animation-delay: 2s;
 }
+@keyframe spinning {
+    0% {transform: rotate(-240deg)}
+    50% {transform: scale(0.7)}
+    100% {transform: rotate(0deg)}
+}
 .them-eyes:hover {
     transition: 2s;
-    transform: rotate(-240deg);
+    transform: rotate(-360deg) scale(0.7);
+    animation-name: spinning;
 }
 /* MS Facts */
 .mangekyo-facts {
@@ -202,17 +212,24 @@ main {
     background-color: #b10303;
     border-radius: 5px;
 }
+.item-1:hover {
+    transform: scale(1.1);
+}
 .item-1 img {
     width: inherit;
     height: 100%;
     object-fit: cover;
     overflow: inherit;
 }
+
 .item-2 {
     width: 100%;
     overflow: hidden;
     background-color: aqua;
     border-radius: 5px;
+}
+.item-2:hover {
+    transform: scale(1.1);
 }
 .item-2 img {
     width: inherit;
@@ -226,6 +243,9 @@ main {
     background-color: blueviolet;
     border-radius: 5px;
 }
+.item-3:hover {
+    transform: scale(1.1);
+}
 .item-3 img {
     width: inherit;
     height: 100%;
@@ -237,6 +257,9 @@ main {
     overflow: hidden;
     background-color: chartreuse;
     border-radius: 5px;
+}
+.item-4:hover {
+    transform: scale(1.1);
 }
 .item-4 img {
     width: inherit;
@@ -250,6 +273,9 @@ main {
     background-color: black;
     border-radius: 5px;
 }
+.item-5:hover {
+    transform: scale(1.1);
+}
 .item-5 img {
     width: inherit;
     height: 100%;
@@ -261,6 +287,9 @@ main {
     grid-column-end: 4;
     overflow: hidden;
     border-radius: 5px;
+}
+.item-6:hover {
+    transform: scale(1.1);
 }
 .item-6 img {
     width: 100%;
