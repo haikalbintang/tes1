@@ -12,6 +12,7 @@ header {
     left: 0;
     width: 100%;
     border-bottom: 5px solid rgb(207, 100, 29);
+    z-index: 2;
 }
 .header-left {
     display: flex;
@@ -128,6 +129,9 @@ main {
     left: 3000px;
     animation: slideIn 2s forwards;
  }
+ .heroku-slide > h1 {
+    font-size: 32px;
+ }
  @keyframes slideIn {
     from {
       transform: translateX(100%);
@@ -154,7 +158,9 @@ main {
     justify-content: center;
     align-items: center;
 }
-
+.whose-eyes figcaption {
+    font-size: 20px;
+}
 .them-eyes {
     border-radius: 100%;
     transition: transform 2s;
@@ -174,6 +180,7 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    color: white;
     background-color: black;
     border-top: 5px solid rgb(207, 100, 29);;
     border-bottom: 5px solid rgb(207, 100, 29);;
@@ -182,43 +189,84 @@ main {
     display: grid;
     grid-template-columns: 2fr 1fr 1fr;
     grid-template-rows: repeat(3, 240px);
-    gap: 10px;
-    padding: 10px;
-    border: 2px solid black;
+    gap: 24px;
+    padding: 0 24px 24px 24px;
+    border: 2px solid black
 }
+
 .item-1 {
     grid-row-start: 1;
     grid-row-end: 4;
     width: 100%;
     overflow: hidden;
     background-color: #b10303;
+    border-radius: 5px;
 }
 .item-1 img {
-    width:;
+    width: inherit;
     height: 100%;
     object-fit: cover;
+    overflow: inherit;
 }
 .item-2 {
+    width: 100%;
+    overflow: hidden;
     background-color: aqua;
+    border-radius: 5px;
+}
+.item-2 img {
+    width: inherit;
+    height: 100%;
+    object-fit: cover;
+    overflow: inherit;
 }
 .item-3 {
+    width: 100%;
+    overflow: hidden;
     background-color: blueviolet;
+    border-radius: 5px;
+}
+.item-3 img {
+    width: inherit;
+    height: 100%;
+    object-fit: cover;
+    overflow: inherit;
 }
 .item-4 {
+    width: 100%;
+    overflow: hidden;
     background-color: chartreuse;
+    border-radius: 5px;
+}
+.item-4 img {
+    width: inherit;
+    height: 100%;
+    object-fit: cover;
+    overflow: inherit;
 }
 .item-5 {
-    background-color: black;
-    background-image: url(sasuke\ MS.jpg);
-    background-repeat: no-repeat;
-    object-fit: cover;
     width: 100%;
-    max-height: 100%;
+    overflow: hidden;
+    background-color: black;
+    border-radius: 5px;
+}
+.item-5 img {
+    width: inherit;
+    height: 100%;
+    object-fit: cover;
+    overflow: inherit;
 }
 .item-6 {
     grid-column-start: 2;
     grid-column-end: 4;
     overflow: hidden;
+    border-radius: 5px;
+}
+.item-6 img {
+    width: 100%;
+    height: inherit;
+    object-fit: cover;
+    overflow: inherit;
 }
 .facts-img {
     display: flex;
